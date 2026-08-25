@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandeep Rinwa | SEBI Registered Research Analyst</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '27888329174150580');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=27888329174150580&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  :root{
+    --bg:#0a0e14;
+    --bg-alt:#0f151f;
+    --card:#131b27;
+    --accent:#c9a24d;
+    --accent-2:#2ecf8a;
+    --danger:#e0555a;
+    --text:#edf1f5;
+    --muted:#94a3b5;
+    --border:#22303f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+    background:radial-gradient(1100px 550px at 50% -10%, #16202f 0%, var(--bg) 60%);
+    color:var(--text);
+    line-height:1.6;
+  }
+  a{color:inherit;text-decoration:none;}
+  .container{max-width:960px;margin:0 auto;padding:0 20px;}
+
+  /* NAV */
+  header{
+    position:sticky;top:0;z-index:50;
+    backdrop-filter:blur(10px);
+    background:rgba(10,14,20,0.8);
+    border-bottom:1px solid var(--border);
+  }
+  nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 20px;max-width:960px;margin:0 auto;
+  }
+  .brand{display:flex;flex-direction:column;font-weight:700;font-size:16px;}
+  .brand small{font-weight:400;font-size:11px;color:var(--muted);}
+  .nav-cta{
+    background:linear-gradient(135deg,var(--accent),#e6c877);
+    color:#1a1300;font-weight:700;padding:10px 18px;border-radius:8px;
+    font-size:14px;transition:transform .2s ease;
+  }
+  .nav-cta:hover{transform:translateY(-2px);}
+
+  /* HERO */
+  .hero{padding:70px 20px 40px;text-align:center;}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--card);border:1px solid var(--border);
+    padding:8px 16px;border-radius:999px;font-size:13px;color:var(--muted);
+    margin-bottom:22px;
+  }
+  h1{
+    font-size:clamp(28px,4.6vw,44px);
+    font-weight:800;letter-spacing:-0.02em;
+    margin-bottom:14px;
+  }
+  h1 span{
+    background:linear-gradient(135deg,var(--accent),#e6c877);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p{color:var(--muted);max-width:560px;margin:0 auto 30px;font-size:16px;}
+  .cta-btn{
+    display:inline-flex;align-items:center;gap:10px;
+    background:linear-gradient(135deg,var(--accent-2),#25b177);
+    color:#04140c;font-weight:800;font-size:16px;
+    padding:15px 32px;border-radius:8px;
+    box-shadow:0 10px 26px rgba(46,207,138,.3);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .cta-btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(46,207,138,.45);}
+  .cta-sub{margin-top:12px;font-size:12.5px;color:var(--muted);}
+
+  /* REGISTRATION STRIP */
+  .reg-strip{
+    background:var(--card);border:1px solid var(--border);
+    border-radius:12px;padding:18px 24px;margin:34px auto 0;
+    max-width:640px;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;
+    font-size:13.5px;color:var(--muted);
+  }
+  .reg-strip b{color:var(--text);}
+
+  /* FEATURES */
+  .features{padding:50px 20px 50px;}
+  .features h2{text-align:center;font-size:26px;margin-bottom:32px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;}
+  .card{
+    background:var(--card);border:1px solid var(--border);
+    border-radius:14px;padding:24px;transition:transform .2s ease, border-color .2s ease;
+  }
+  .card:hover{transform:translateY(-4px);border-color:var(--accent);}
+  .icon{
+    width:42px;height:42px;border-radius:10px;
+    background:linear-gradient(135deg, rgba(201,162,77,.18), rgba(46,207,138,.18));
+    display:flex;align-items:center;justify-content:center;
+    font-size:20px;margin-bottom:14px;
+  }
+  .card h3{font-size:16px;margin-bottom:8px;}
+  .card p{color:var(--muted);font-size:13.5px;}
+
+  /* RISK BANNER */
+  .risk-banner{
+    background:rgba(224,85,90,.08);border:1px solid rgba(224,85,90,.35);
+    border-radius:12px;padding:18px 22px;margin:0 20px 50px;
+    max-width:920px;margin-left:auto;margin-right:auto;
+    font-size:13px;color:#f0b3b5;
+  }
+  .risk-banner b{color:var(--danger);}
+
+  /* FINAL CTA */
+  .final{
+    text-align:center;padding:60px 20px;
+    background:linear-gradient(180deg, transparent, rgba(201,162,77,.05));
+    border-top:1px solid var(--border);
+  }
+  .final h2{font-size:24px;margin-bottom:12px;}
+  .final p{color:var(--muted);margin-bottom:24px;}
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--border);
+    padding:30px 20px;text-align:center;color:var(--muted);font-size:12.5px;
+  }
+  footer .reg-line{margin-bottom:10px;color:var(--muted);}
+  footer .links{margin-top:10px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap;}
+  footer a{color:var(--accent);text-decoration:underline;cursor:pointer;}
+
+  /* MODAL */
+  .modal-overlay{
+    display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);
+    z-index:100;align-items:center;justify-content:center;padding:20px;
+  }
+  .modal-overlay.active{display:flex;}
+  .modal{
+    background:var(--bg-alt);border:1px solid var(--border);
+    border-radius:14px;max-width:660px;width:100%;
+    max-height:82vh;overflow-y:auto;padding:30px;position:relative;
+  }
+  .modal h2{margin-bottom:16px;font-size:21px;}
+  .modal h3{margin:18px 0 8px;font-size:15px;color:var(--accent);}
+  .modal p, .modal li{color:var(--muted);font-size:13.5px;margin-bottom:8px;}
+  .modal ul{padding-left:20px;}
+  .modal-close{
+    position:absolute;top:16px;right:18px;
+    background:none;border:none;color:var(--muted);
+    font-size:22px;cursor:pointer;line-height:1;
+  }
+  .modal-close:hover{color:var(--text);}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="brand">Sandeep Rinwa <small>SEBI Registered Research Analyst</small></div>
+    <a href="https://t.me/+IPg5H7aBshViMTll" class="nav-cta" target="_blank" rel="noopener" onclick="fbq('track','Lead');">Join Now</a>
+  </nav>
+</header>
+
+<section class="hero container">
+  <div class="badge">📊 Research-backed market insights</div>
+  <h1>Trade Smarter with <span>Verified Research</span></h1>
+  <p>Join our Telegram channel for market updates and research-based insights from a SEBI registered Research Analyst.</p>
+  <a href="https://t.me/+IPg5H7aBshViMTll" class="cta-btn" target="_blank" rel="noopener" onclick="fbq('track','Lead');">
+    ✈️ Join Telegram Channel
+  </a>
+  <div class="cta-sub">⚠️ <em>Disclaimer:</em> This content is for educational purposes only and is not a guarantee of profit or investment returns. Stock-market investments are subject to market risks. Please consult a qualified professional where appropriate.</div>
+
+  <div class="reg-strip">
+    <div><b>Name:</b> Sandeep Rinwa</div>
+    <div><b>SEBI RA No:</b> INH000027098</div>
+    <div><b>BSE Enlistment No:</b> 7173</div>
+  </div>
+</section>
+
+<section class="features container">
+  <h2>What You Get</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="icon">📈</div>
+      <h3>Market Research</h3>
+      <p>Research-based market updates and analysis shared regularly.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎓</div>
+      <h3>Educational Content</h3>
+      <p>Learn market concepts and analysis techniques from a registered analyst.</p>
+    </div>
+    <div class="card">
+      <div class="icon">✅</div>
+      <h3>SEBI Registered</h3>
+      <p>Advisory shared under a valid SEBI Research Analyst registration.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔔</div>
+      <h3>Timely Updates</h3>
+      <p>Stay informed with updates shared directly on Telegram.</p>
+    </div>
+  </div>
+</section>
+
+<div class="risk-banner">
+  <b>Risk Disclosure:</b> Investments in the securities market are subject to market risks. Read all related documents carefully before investing. Past performance is not indicative of future returns. Registration granted by SEBI and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors.
+</div>
+
+<section class="final">
+  <div class="container">
+    <h2>Join the Channel</h2>
+    <p>Get research-based market updates directly on Telegram.</p>
+    <a href="https://t.me/+IPg5H7aBshViMTll" class="cta-btn" target="_blank" rel="noopener" onclick="fbq('track','Lead');">
+      ✈️ Join Telegram Channel
+    </a>
+    <div class="cta-sub">⚠️ <em>Disclaimer:</em> This content is for educational purposes only and is not a guarantee of profit or investment returns. Stock-market investments are subject to market risks. Please consult a qualified professional where appropriate.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="reg-line">Sandeep Rinwa &nbsp;|&nbsp; SEBI RA No: INH000027098 &nbsp;|&nbsp; BSE Enlistment No: 7173</div>
+  <div>© 2026 Sandeep Rinwa Research. All rights reserved.</div>
+  <div class="links">
+    <a onclick="document.getElementById('disclaimerModal').classList.add('active')">Disclaimer &amp; Risk Policy</a>
+    <a onclick="document.getElementById('privacyModal').classList.add('active')">Privacy Policy</a>
+    <a onclick="document.getElementById('termsModal').classList.add('active')">Terms of Use</a>
+    <a href="https://t.me/+IPg5H7aBshViMTll" target="_blank" rel="noopener">Telegram Channel</a>
+  </div>
+</footer>
+
+<!-- Disclaimer & Risk Policy Modal -->
+<div class="modal-overlay" id="disclaimerModal">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('disclaimerModal').classList.remove('active')">&times;</button>
+    <h2>Disclaimer &amp; Risk Policy</h2>
+    <p>Last updated: August 24, 2026</p>
+
+    <h3>1. Regulatory Status</h3>
+    <p>Sandeep Rinwa is registered with the Securities and Exchange Board of India (SEBI) as a Research Analyst, Registration No. INH000027098, and holds BSE Enlistment No. 7173. This registration does not guarantee the performance of the intermediary or provide any assurance of returns to investors.</p>
+
+    <h3>2. Educational Purpose Only</h3>
+    <p>All content shared on this page and in the linked Telegram channel is for educational and informational purposes only. It does not constitute personalized investment advice, an offer, or a solicitation to buy or sell any security.</p>
+
+    <h3>3. Market Risk</h3>
+    <p>Investment in securities market is subject to market risks. Please read all scheme/research related documents carefully before investing. Past performance is not indicative of future returns. Prices of securities can go up as well as down based on market conditions.</p>
+
+    <h3>4. No Guarantee of Returns</h3>
+    <p>We do not guarantee any specific returns, profits, or outcomes from following the research, ideas, or updates shared. Any decision to invest based on this content is taken solely at your own discretion and risk.</p>
+
+    <h3>5. Independent Verification</h3>
+    <p>You are encouraged to verify the SEBI registration status independently on the SEBI website (www.sebi.gov.in) and to consult a qualified financial advisor before making any investment decision.</p>
+
+    <h3>6. No Liability</h3>
+    <p>We shall not be liable for any direct, indirect, or consequential loss arising from the use of, or reliance on, any information provided through this page or the Telegram channel.</p>
+
+    <h3>7. Grievance / Complaints</h3>
+    <p>For any complaints or grievances related to research services, you may reach out via the contact details shared in the Telegram channel, or escalate through SEBI SCORES (scores.sebi.gov.in) if unresolved.</p>
+  </div>
+</div>
+
+<!-- Privacy Policy Modal -->
+<div class="modal-overlay" id="privacyModal">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('privacyModal').classList.remove('active')">&times;</button>
+    <h2>Privacy Policy</h2>
+    <p>Last updated: August 24, 2026</p>
+
+    <h3>1. Information We Collect</h3>
+    <ul>
+      <li>Technical data such as browser type, device, and IP address, collected automatically via analytics tools (e.g. Meta Pixel).</li>
+      <li>Interaction data such as page views and button clicks, used to measure ad performance.</li>
+      <li>Any information you voluntarily share when you join our Telegram channel (e.g. your Telegram username), which is also governed by Telegram's own privacy policy.</li>
+    </ul>
+
+    <h3>2. How We Use Meta Pixel</h3>
+    <p>This page uses the Meta (Facebook) Pixel to measure the effectiveness of our advertising and to understand how visitors interact with this page, such as clicking the join button. Meta Pixel may set cookies and collect data as described in <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta's Privacy Policy</a>.</p>
+
+    <h3>3. How We Use Your Information</h3>
+    <ul>
+      <li>To measure and improve the performance of this landing page and our advertising campaigns.</li>
+      <li>To understand how visitors interact with our content.</li>
+      <li>We do not sell your personal information to third parties.</li>
+    </ul>
+
+    <h3>4. Your Choices</h3>
+    <p>You can control cookies and tracking through your browser settings or ad preference tools such as Meta's <a href="https://www.facebook.com/ads/preferences" target="_blank" rel="noopener">Ad Preferences</a>. You may leave the Telegram channel at any time.</p>
+
+    <h3>5. Contact</h3>
+    <p>For questions about this policy, please reach out through our Telegram channel.</p>
+  </div>
+</div>
+
+<!-- Terms of Use Modal -->
+<div class="modal-overlay" id="termsModal">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('termsModal').classList.remove('active')">&times;</button>
+    <h2>Terms of Use</h2>
+    <p>Last updated: August 24, 2026</p>
+    <ul>
+      <li>This page is provided to share market research and invite you to join our Telegram channel.</li>
+      <li>Membership in the Telegram channel is voluntary and free; you may leave at any time.</li>
+      <li>Content shared is educational in nature and should not be treated as a recommendation to buy or sell any specific security without independent due diligence.</li>
+      <li>We are not responsible for content shared by other members within the Telegram channel.</li>
+      <li>These terms may be updated periodically; continued use of the channel constitutes acceptance of updates.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('.modal-overlay').forEach(function(overlay){
+    overlay.addEventListener('click', function(e){
+      if(e.target === overlay){ overlay.classList.remove('active'); }
+    });
+  });
+</script>
+
+</body>
+</html>
